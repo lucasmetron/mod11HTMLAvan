@@ -2,21 +2,15 @@ let tela = document.getElementById("tela");
 
 let ctx = tela.getContext("2d");
 
-ctx.moveTo(250,0)
-ctx.lineTo(0,500)
-ctx.stroke()
+ctx.beginPath();
 
-ctx.moveTo(250,0)
-ctx.lineTo(500,500)
-ctx.stroke()
+ctx.lineWidth = 4;
+ctx.strokeStyle = "red";
+ctx.moveTo(10,10);
+ctx.lineTo(400,300);
+ctx.lineTo(10,300)
+ctx.fillStyle = "blue"
+ctx.fill();
+ctx.closePath();
+ctx.stroke();
 
-ctx.moveTo(124,250)
-ctx.lineTo(376,250)
-ctx.stroke()
-
-ctx.moveTo(0,500)
-ctx.lineTo(500,500)
-ctx.stroke()
-ctx.moveTo(0,500)
-ctx.lineTo(500,500)
-ctx.stroke()
