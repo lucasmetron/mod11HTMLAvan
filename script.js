@@ -1,4 +1,4 @@
-let jogador = document.getElementById("jogador")
+/*let jogador = document.getElementById("jogador")
 
 let xInicial = 0;
 let yInicial = 0;
@@ -18,4 +18,4 @@ setInterval(function(){
 
 moverJogadorPara(xInicial++, yInicial++);
 
-}, 1400)
+}, 1400)*/
