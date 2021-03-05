@@ -2,15 +2,16 @@ let tela = document.getElementById("tela");
 
 let ctx = tela.getContext("2d");
 
-ctx.beginPath();
+let x = 250;
+let y = 250;
+let raio = 200;
+let inicio = 0;
+let fim = 2 * Math.PI;
 
-ctx.lineWidth = 4;
+
+
+ctx.beginPath();
 ctx.strokeStyle = "red";
-ctx.moveTo(10,10);
-ctx.lineTo(400,300);
-ctx.lineTo(10,300)
-ctx.fillStyle = "blue"
-ctx.fill();
-ctx.closePath();
+ctx.arc(x,y,raio,inicio,fim);
 ctx.stroke();
 
